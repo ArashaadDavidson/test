@@ -4,7 +4,7 @@ const app = express()
 const hbs = require('hbs')
 const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
-
+const port = process.env.PORT || 3000
 //setup handlebars engine and views directory
 
 app.set('view engine','hbs') //sets a value for a given express setting
@@ -78,8 +78,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000, ()=>{
-    console.log('listening on 3000')
-    console.log(__dirname)
-    console.log(`"directory"`)
+app.listen(port, ()=>{
+    console.log('listening on '+port)
 })
