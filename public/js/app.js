@@ -7,6 +7,8 @@ const p4 = document.querySelector('.p4')
 const p5 = document.querySelector('.p5')
 const p6 = document.querySelector('.p6')
 
+//change involving a comment
+
 form.addEventListener('submit',  (e)=>{
     e.preventDefault()
     const location = search.value // without creating this variable and setting it to the value of the above search variable, the fetch API return undefined results
