@@ -6,6 +6,7 @@ const p3 = document.querySelector('.p3')
 const p4 = document.querySelector('.p4')
 const p5 = document.querySelector('.p5')
 const p6 = document.querySelector('.p6')
+const p7 = document.querySelector('.p7')
 
 //change involving a comment
 
@@ -23,6 +24,7 @@ form.addEventListener('submit',  (e)=>{
                 p4.textContent = `Temperature: ${data.temperature}`
                 p5.textContent = `Wind Speed: ${data.wind_speed}`
                 p6.textContent = `Humidity: ${data.humidity}`
+                p7.textContent = `Time of request: ${data.TimeOfRequest}`
             }
             
         })

@@ -33,7 +33,8 @@ const forecast = (Lat,Lng, callback)=>{
             callback(undefined, {
                 temperature: body.current.temperature,
                 wind_speed: body.current.wind_speed,
-                humidity: body.current.humidity
+                humidity: body.current.humidity,
+                TimeOfRequest: body.current.observation_time
             })
         }
     })
